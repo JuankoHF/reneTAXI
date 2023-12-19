@@ -1,0 +1,167 @@
+@import 'global.css';
+
+.presentation {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 60px;
+}
+.slider_content{
+    width: 100vw;
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.slider_content ul {
+    display: flex;
+    animation: cambio 15s infinite linear;
+    min-width: 400%;
+    height: 100%;
+}
+.slider_content li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+.slider_content li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.slider_content li .position_right {
+    object-position: right;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+    
+    33%{margin-left: -100vw;}
+    60%{margin-left: -100vw;}
+
+    63%{margin-left: -200vw;}
+    90%{margin-left: -200vw;}
+
+    93%{margin-left: -300vw;}
+    100%{margin-left: -300vw;}
+    
+}
+.onSlide_text_content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 6%;
+    background-color: #04040494;
+}
+
+.onSlide_text_content p{
+    font-size: var(--font-26-big);
+    color: var(--white-page);
+    letter-spacing: 0.4px;
+    font-weight: 400;
+}
+.onSlide_text_content p:nth-child(2) {
+    font-style: italic;
+}
+.onSlide_text_content p strong {
+    font-family: 'Zilla Slab', serif;
+    font-size: var(--font-3-big);
+    font-style: normal;
+    font-weight: 600;
+    color: var(--yelow-detales);
+}
+
+.content_slogan {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 100px;
+
+}
+.onSlide_text_content h1 {
+    font-size: var(--font-16-medium);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--white-page);
+}
+
+.go_contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 8% 0;
+    gap: 32px;
+}
+
+.go_contact h2 {
+    font-size: var(--font-24-big);
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: var(--black-page);
+    text-transform: uppercase;
+}
+
+.action_contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.contact_number {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.contact_number span {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-image: url(../icons/phone-black.svg);
+    background-size: cover;
+}
+.contact_number p {
+    font-size: var(--font-2-medium);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.action_contact a {
+    text-decoration: none;
+    color: var(--white-page);
+    font-size: var(--font-18-medium);
+    letter-spacing: 0.4px;
+    padding: 8px 20px;
+    background-color: var(--black-page);
+    border-radius: 8px;
+    font-weight: bold;
+
+}
