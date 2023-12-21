@@ -150,7 +150,7 @@
     background-size: cover;
 }
 .contact_number p {
-    font-size: var(--font-2-medium);
+    font-size: var(--font-26-big);
     font-weight: 600;
     letter-spacing: 0.4px;
 }
