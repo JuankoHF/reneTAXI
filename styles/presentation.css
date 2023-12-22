@@ -221,3 +221,22 @@
         padding: 12px 32px;
     }
 }
+
+@media screen and (min-width: 830px) and (max-height: 500px) {
+    .content_slogan {
+        padding-top: 20px;
+    }
+    .onSlide_text_content p:nth-child(2) {
+        max-width: 600px;
+    }
+    .go_contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 6% 0;
+        gap: 32px;
+    }
+    .action_contact {
+        gap: 16px;
+    }
+}

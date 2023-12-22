@@ -54,6 +54,18 @@
     letter-spacing: 0.4px;
     color: var(--black-page);
 }
+
+.flex_cards {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-y: hidden;
+}
 .card_opinion {
     width: 100%;
     max-width: 340px;
@@ -126,6 +138,10 @@
         margin-bottom: 60px;
        
     }
+
+    .flex_cards {
+        gap: 40px;
+    }
     .card_opinion {
         padding: 20px 20px;
     }
@@ -151,3 +167,8 @@
   
     }
 }
+
+@media screen and (min-width: 830px) and (max-height: 500px) {
+  
+
+} 
