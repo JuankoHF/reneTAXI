@@ -83,3 +83,32 @@
     object-position: center
 
 }
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .election h2 {
+        font-size: var(--font-28-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+
+    .election h2 strong {
+        font-size: var(--font-34-big);
+    }
+
+    .election_text {
+        gap: 28px;
+    }
+    .election_text p {
+        font-size: var(--font-18-medium);
+    }
+
+    .election_text ul li {
+        font-size: var(--font-2-medium);
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .election_text ul li span {
+        min-width: 20px;
+        height: 20px;
+    }
+}

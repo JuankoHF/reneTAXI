@@ -112,3 +112,30 @@
 .google {
     background-image: url(../icons/google-yellow-black.svg);
 }
+
+@media screen and (min-width: 700px) and (min-height: 510px) {
+    .header_content {
+        height: 80px;
+    }
+
+    .menu {
+        top: 25px;
+        right: 40px;
+    }
+
+    .activeline1__bars-menu {
+        transform: rotate(45deg) translate(7px, 6px) scale(0.9, 1.1);
+        
+    }
+
+    .activeline3__bars-menu {
+        transform: rotate(-45deg) translate(7px, -6px) scale(0.9, 1.1);
+    }
+    .responsive_display ul {
+        padding: 28px 36px;
+    }
+
+    .responsive_display ul li a {
+        font-size: var(--font-2-medium);
+    }
+}

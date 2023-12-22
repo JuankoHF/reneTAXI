@@ -1,5 +1,6 @@
 document.querySelector(".menu").addEventListener("click", animateBars);
 document.querySelector(".menu").addEventListener("click", animateNav);
+document.querySelector(".responsive_display").addEventListener("click", animateNav);
 
 
 var line1 = document.querySelector(".line1__bars-menu");
