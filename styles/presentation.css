@@ -10,6 +10,7 @@
     align-items: flex-start;
     position: relative;
     padding-top: 60px;
+    overflow-y: hidden;
 }
 .slider_content{
     width: 100vw;
@@ -115,6 +116,7 @@
     align-items: center;
     padding: 30px 8% 0;
     gap: 32px;
+    
 }
 
 .go_contact h2 {
@@ -123,6 +125,7 @@
     letter-spacing: 0.4px;
     color: var(--black-page);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .action_contact {
@@ -131,7 +134,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
 }
 .contact_number {
