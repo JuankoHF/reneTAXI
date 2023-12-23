@@ -121,3 +121,13 @@
         height: 240px;
     }
 } 
+
+@media screen and (min-width: 1200px) {
+    .election_flex {
+        flex-direction: row;
+        gap: 60px;
+    }
+    .election_image {
+        height: 300px;
+    }
+} 

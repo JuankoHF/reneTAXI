@@ -21,7 +21,7 @@
 
 .content_header_service {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -206,3 +206,37 @@
         width: 60%;
     }
 } 
+
+@media screen and (min-width: 1200px) {
+
+    .content_header_service {
+        max-width: 800px;
+    }
+    .content_services {
+        flex-direction: row;
+        max-width: 800px;
+    }
+    
+    .top_left {
+        width: 250px;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 16px;
+        background-color: #040404b5;
+    }
+    .bootom_right {
+        width: calc(100% - 250px);
+    }
+    .description_service {
+        height: 200px;
+        padding: 20px 36px;
+    }
+    .black {
+        height: 200px;
+        padding: 0;
+    }
+    .black p {
+        padding: 20px 36px;
+    }
+}

@@ -139,3 +139,54 @@
         font-size: var(--font-2-medium);
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .header_content {
+        height: 80px;
+        padding: 0 40px;
+    }
+    .menu {
+        display: none;
+    }
+    .responsive_display {
+        width: auto;
+        height: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        opacity:1;
+        clip-path: inset(0 0 0 0);
+        transition: all 0.3s ease-in-out;
+        background-color: var(--white-page);
+        z-index: 10;
+    }
+
+    .responsive_display ul {
+        width: auto;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .responsive_display ul li {
+        height: auto;
+        padding: 8px 12px;
+        margin-top: 0px;
+    }
+    .responsive_display ul .content_social {
+        margin-top: 0px;
+        display: flex;
+        gap: 16px;
+    }
+    .responsive_display ul li a {
+        font-family: 'Zilla Slab', serif;
+        font-size: var(--font-18-medium);
+        
+    }
+    .responsive_display ul .content_social a {
+        width: 32px;
+        height: 32px;
+    }
+}

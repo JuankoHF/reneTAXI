@@ -240,3 +240,37 @@
         gap: 16px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .slider_content {
+        height: 65vh;
+    }
+    .onSlide_text_content {
+        padding: 48px 8%;
+    }
+    .go_contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 6% 0;
+        gap: 32px;
+    }
+
+    .content_slogan {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 60px;
+    }
+    .onSlide_text_content p {
+        max-width: 520px;
+    }
+    .action_contact {
+        width: auto;
+        gap: 28px;
+    }
+}

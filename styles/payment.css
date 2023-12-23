@@ -226,3 +226,24 @@
         height: 220px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .content_personal_flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    .content_personal_flex ul {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .content_personal_flex img {
+        width: 55%;
+        height: 300px;
+    }
+}
