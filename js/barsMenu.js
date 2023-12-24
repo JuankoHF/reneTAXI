@@ -18,3 +18,19 @@ function animateBars() {
 function animateNav() {
     lateralNav.classList.toggle("active_nav");
 }
+
+window.addEventListener('scroll', function() {
+
+    let animateContact = document.getElementById('contact');
+    let positionContact = animateContact.getBoundingClientRect().top;
+    let linckContact = document.querySelector(".link_whatsapp");
+
+    if(positionContact < 590) {
+        linckContact.classList.add("circle_contact");
+    }
+
+    if(positionContact > 620) {
+        linckContact.classList.remove("circle_contact");
+    }
+    console.log(positionContact);
+})
