@@ -240,3 +240,35 @@
         padding: 20px 36px;
     }
 }
+@media screen and (min-width: 1900px) {
+    .services {
+        margin-bottom: 100px;
+    }
+    .services h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .bg_yellow {
+        height: 60px;
+    }
+
+    .top_left {
+        padding: 56px 16px;
+    }
+    .top_left h3 {
+        font-size: var(--font-24-big);
+
+    }
+    .description_service {
+        height: 240px;
+        padding: 20px 28px;
+    }
+    .description_service p {
+        font-size: var(--font-24-big);
+    }
+    .black {
+        height: 240px;
+        padding: 0;
+    }
+}

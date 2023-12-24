@@ -7,7 +7,7 @@ window.sr =ScrollReveal();
     });
 
     sr.reveal('.linck', {
-        duration: 3000,
+        duration: 1500,
         origin: 'left',
         distance: '60px'
     });

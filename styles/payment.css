@@ -61,6 +61,7 @@
 
 .payment_text {
     width: 80%;
+    max-width: 900px;
     height: auto;
     margin-bottom: 44px;
 }
@@ -228,6 +229,17 @@
 }
 
 @media screen and (min-width: 1200px) {
+   
+    .fondo {
+        height: 320px;
+    }
+
+    .fondo_text p:hover {
+        background-color: #f1cc23;
+        padding: 14px 32px;
+        letter-spacing: 0.8px;
+        transition: all 0.4s linear;
+    }
     .content_personal_flex {
         flex-direction: row;
         justify-content: space-between;
@@ -245,5 +257,69 @@
     .content_personal_flex img {
         width: 55%;
         height: 300px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+   
+    .fondo {
+        height: 390px;
+        margin-bottom: 100px;
+    }
+
+    .fondo_text {
+        padding: 50px 0;
+    }
+
+    .fondo_text h2 {
+        font-size: var(--font-24-big);
+        max-width: 440px;
+    }
+    .fondo_text p {
+        font-size: var(--font-26-big);
+        letter-spacing: 0.8px;
+        padding: 14px 36px;
+        border-radius: 12px;
+    }
+    .payment_text {
+        margin-bottom: 100px;
+    }
+
+    .payment_text h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .personal_service {
+        margin-bottom: 40px;
+    }
+    .payment_text h3 {
+        font-size: var(--font-26-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+    }
+    .personal_service h3 strong {
+        font-size: var(--font-34-big);
+    }
+    .content_personal_flex ul li {
+        font-size: var(--font-24-big);
+        margin-bottom: 16px;
+    }
+    .content_personal_flex ul li span {
+        width: 24px;
+        height: 24px;
+    }
+
+    .content_personal_flex img {
+        width: 55%;
+        height: 340px;
+    }
+    .payment_text h3 {
+        font-size: var(--font-28-big);
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    .payment_text p {
+        font-size: var(--font-24-big);
     }
 }

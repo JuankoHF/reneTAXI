@@ -178,3 +178,54 @@
     }
 
 } 
+@media screen and (min-width: 1900px)  {
+  
+    .opinions {
+        margin-bottom: 80px,
+    }
+    .content_header_opinion h2 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .content_header_opinion h3 {
+        font-size: var(--font-26-big);
+        letter-spacing: 0.8px;
+        margin-bottom: 80px;
+    }
+
+    .content_card_opinions h3 {
+        font-size: var(--font-24-big);
+    }
+    .content_card_opinions {
+        max-width: 1200px;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+    .flex_cards {
+        width: 100%;
+        max-width: 1200px;
+    }
+    .card_opinion {
+        max-width: 360px;
+        gap: 16px;
+        padding: 24px;
+    }
+    .card_opinion p {
+        font-size: var(--font-18-medium);
+        margin-bottom: 32px;
+    }
+    .news_drivers {
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    .news_drivers h3 {
+        font-size: var(--font-3-big);
+        letter-spacing: 1px;
+    }
+    .news_drivers h4 {
+        font-size: var(--font-24-big);
+        letter-spacing: 1.2px;
+    }
+ 
+}
