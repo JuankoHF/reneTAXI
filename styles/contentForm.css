@@ -1,0 +1,272 @@
+@import 'global.css';
+
+.content_form {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #635f4f87;
+ 
+}
+.show_form {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 80%;
+    height: auto;
+    max-height: 600px;
+    overflow-y: scroll;
+    background: var(--white-page);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+}
+.form_service, .form_acount {
+    display: none;
+}
+.show_form_service {
+    display: block;
+}
+
+.header_form {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    overflow: visible;
+}
+.header_form img {
+    width: 140px;
+    height: 40px;
+    margin-right: 28px;
+    object-fit: cover;
+}
+.header_form p {
+    font-size: var(--font-16-medium);
+    font-weight: bold;
+} 
+.close_icon, .close_acount {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: block;
+    background-image: url(../icons/close-black.svg);
+    background-position: center;
+    background-size: cover;
+}
+.container .form {
+    margin-top: 15px;
+}
+  
+.form .input-box {
+    width: 100%;
+    margin-top: 10px;
+}
+  
+.input-box label, .gender-box label {
+    color: var(--black-page);
+    font-size: var(--font-12-medium);
+    font-weight: 600;
+}
+  
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: var(--font-12-medium);
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid var(--yelow-detales);
+    border-radius: 6px;
+    padding: 0 15px;
+    background: var(--white-page);
+}
+
+.form :where(.input-box textarea) {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    outline: none;
+    font-size: var(--font-12-medium);
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid var(--yelow-detales);
+    border-radius: 6px;
+    padding: 0 15px;
+    background: var(--white-page);
+}
+
+  
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .flex_input {
+    display: flex;
+    gap: 12px;
+}
+  
+.form .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.form .gender-box {
+    margin-top: 10px;
+}
+  
+.form :where(.gender-option) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+    overflow-y: visible;
+}
+  
+  
+.form .gender {
+    column-gap: 8px;
+    overflow: visible;
+    display: flex;
+}
+  
+.gender input {
+    accent-color: #EE4E34;
+
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+  
+.gender label {
+    color: #808080;
+    font-weight: normal;
+}
+  
+.address :where(input, .select-box) {
+    margin-top: 10px;
+}
+  
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1.2rem;
+    background: var(--white-page);
+}
+  
+.form button {
+    height: 40px;
+    width: 100%;
+    color: var(--white-page);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #55db76;
+}
+  
+.form button:hover {
+    background: #2d7940;
+}
+
+.form .tropipay {
+    background-color: var(--yelow-detales);
+    color: var(--black-page);
+}
+.checkbox {
+    appearance: none;
+    width: 16px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    border: 1px solid var(--grey-darck);
+    position: relative;
+    overflow: visible;
+    transition: all 0.2s ease-in-out;
+}
+  
+.checkbox::before {
+    font-family: "Quicksand", sans-serif;
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+    content: "✔";
+    font-size: 22px;
+    color: var(--yelow-detales);
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+  
+.checkbox:checked::before {
+    animation: zoom 0.5s ease-in-out;
+    transform: scale(1);
+}
+  
+@keyframes zoom {
+    0% {
+      transform: scale(0);
+    }
+  
+    20% {
+      transform: scale(1.5);
+    }
+  
+    40% {
+      transform: scale(0.5);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  
+    70% {
+      transform: scale(1.2);
+    }
+  
+    90% {
+      transform: scale(0.8);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 830px) and (max-height: 500px) {
+    .container {
+        max-height: 388px;
+        padding: 36px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 36px;
+    }
+}
