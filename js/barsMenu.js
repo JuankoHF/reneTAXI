@@ -32,5 +32,4 @@ window.addEventListener('scroll', function() {
     if(positionContact > 620) {
         linckContact.classList.remove("circle_contact");
     }
-    console.log(positionContact);
 })

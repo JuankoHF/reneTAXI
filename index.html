@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/opinions.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/contentForm.css">
 
     <title>RENETAXI - Servicio de taxi en Cuba</title>
 </head>
@@ -90,6 +91,133 @@
             </div>
             
         </section>
+        <section class="content_form">
+            <div class="form_service container">
+                
+                <div class="header_form">
+                    <img src="https://renetaxi.com/wp-content/uploads/2023/08/cropped-RENE_CLIENTES-01-4-150x48.png" alt="logo de rene taxi">
+                    <p>Solicitar Servicio</p>
+                    <span class="close_icon"></span>
+                </div>
+                <form class="form" action="#">
+                    <div class="input-box">
+                        <label>Nombre del cliente</label>
+                        <input required="" placeholder="Escriba el nombre" type="text">
+                    </div>
+                    <div class="flex_input">
+                        <div class="input-box">
+                            <label>Fecha</label>
+                            <input required="" placeholder="Enter phone number" type="date">
+                        </div>
+                        <div class="input-box">
+                            <label>Hora</label>
+                            <input required="" placeholder="" type="time">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Dirección de recogida</label>
+                        <input required="" placeholder="" type="text">
+                    </div>
+                    <div class="input-box">
+                        <label>Dirección de destino</label>
+                        <input required="" placeholder="" type="text">
+                    </div>
+                    <div class="input-box">
+                        <label>¿Cuenta con paradas en el viaje?</label>
+                        <textarea required="" 
+                            placeholder="indique por favor la cantidad de paradas y las direcciones" type="text">
+                        </textarea>
+                    </div>
+                    <div class="input-box">
+                        <label>Cantidad de pasajeros</label>
+                        <input required="" placeholder="" type="number">
+                    </div>
+                    <div class="gender-box">
+                        <label>Detalles del viaje</label>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-male">Económico</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-female">Aire acondicionado</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-other">Confort</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-male">Extranjero</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-female">Equipaje</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-other">Mascotas</label>
+                            </div>
+                            <div class="gender">
+                                <input class="checkbox" type="checkbox">
+                                <label for="check-other">Carga</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box address">
+    
+                        <div class="column">
+
+                            <div class="select-box select_pay">
+                                <select>
+                                    <option hidden="">Forma de pago</option>
+                                    <option>Transferencia</option>
+                                    <option>Efectivo</option>
+                                </select>
+                            </div>
+                            <div class="select-box">
+                                <select>
+                                    <option hidden="">Moneda</option>
+                                    <option>USD</option>
+                                    <option>EUR</option>
+                                    <option>MLC</option>
+                                    <option>CUP</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Otra información que desee brindarnos</label>
+                        <textarea required="" 
+                            type="text">
+                        </textarea>
+                    </div>
+                    <button>Contactar Ahora</button>
+                </form>
+            </div>
+            
+            <div class="form_acount container">
+                <div class="header_form">
+                    <img src="https://renetaxi.com/wp-content/uploads/2023/08/cropped-RENE_CLIENTES-01-4-150x48.png" alt="logo de rene taxi">
+                    <p>Cuenta Fondo</p>
+                    <span class="close_acount"></span>
+                    <p>Para crear la cuenta o conocer más sobre esta opción ponte en contacto con nuestras operadoras</p>
+                </div>
+                <form class="form" action="">
+                    <div class="input-box">
+                        <label>Nombre del cliente</label>
+                        <input required="" placeholder="Escriba el nombre" type="text">
+                    </div>
+
+                    <button>Contactar Ahora</button>
+
+                    <button class="tropipay">Depositar con Tropipay</button>
+                </form>
+
+            </div>
+
+        </section>
 
         <section class="payment">
 
@@ -97,7 +225,7 @@
                 <div class="fondo_text">
                     <h2>Crea una cuenta fondo para tu familia y amigos</h2>
 
-                    <p data-aos="zoom-in" data-aos-duration="800">CREAR CUENTA FONDO</p>
+                    <p data-aos="zoom-in" data-aos-duration="800" class="acount">CREAR CUENTA FONDO</p>
                 </div>
             </div>
 
@@ -321,6 +449,7 @@
 
     <script src="./js/barsMenu.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/popups.js"></script>
     <script src="./js/class-scrollReveal.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
